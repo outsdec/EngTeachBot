@@ -8,7 +8,3 @@ router = Router()
 async def start(message: Message):
     photo = FSInputFile("media/start.jpg")
     await message.answer_photo(photo, caption = f'Привет! Я – чат-бот "EngTeachBot", помогу вам с изучением английских слов, с помощью специально разработанных тренажеров.')
-    
-    
-    
-    https://github.com/outsdec/Project_Conference.git
