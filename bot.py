@@ -1,5 +1,5 @@
 from aiogram import F, Bot, Dispatcher, types
-from handlers import start
+from handlers import start, faq, donate, about
 from config_reader import config
 import asyncio
 
@@ -7,7 +7,10 @@ bot = Bot(token=config.bot_token.get_secret_value())
 dp = Dispatcher()
 
 dp.include_routers(
-    start.router
+    start.router,
+    faq.router,
+    donate.router,
+    about.router
 )
 
 async def main():
