@@ -9,3 +9,4 @@ router = Router()
 async def start(message: Message):
     photo = FSInputFile("media/start.jpg")
     await message.answer_photo(photo, caption = f'Для того, чтобы сохранить Ваш прогресс, необходимо войти в аккаунт или создать новый.', reply_markup=sign())
+
