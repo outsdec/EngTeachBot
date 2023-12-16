@@ -6,7 +6,7 @@ class Settings(BaseSettings):
     # Желательно вместо str использовать SecretStr 
     # для конфиденциальных данных, например, токена бота
     bot_token: SecretStr
-
+    base_token: SecretStr
     # Начиная со второй версии pydantic, настройки класса настроек задаются
     # через model_config
     # В данном случае будет использоваться файла .env, который будет прочитан
