@@ -8,4 +8,5 @@ router = Router()
 @router.message(Command("start"))
 async def start(message: Message):
     photo = FSInputFile("media/start.jpg")
-    await message.answer_photo(photo, caption = f'Привет! Я – чат-бот "EngTeachBot", помогу вам с изучением английских слов, с помощью специально разработанных тренажеров.', reply_markup=sign())
+    await message.answer_photo(photo, caption = f'Для того, чтобы сохранить Ваш прогресс, необходимо войти в аккаунт или создать новый.', reply_markup=sign())
+
