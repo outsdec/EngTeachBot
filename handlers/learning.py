@@ -3,6 +3,7 @@ from aiogram.filters import Command
 from aiogram.types import Message, FSInputFile, CallbackQuery
 from keyboards.level_education import menu_level_education
 
+
 router = Router()
 
 @router.callback_query(F.data == "learning")
