@@ -6,4 +6,4 @@ router = Router()
 
 @router.callback_query(F.data == "training")
 async def train(callback: types.CallbackQuery):
-    await callback.message.answer(f"Выберите уровень словарного запаса")
+    await callback.message.answer(f"Выберите уровень владения языком")
