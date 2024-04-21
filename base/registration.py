@@ -11,13 +11,14 @@ async def reg_users(uid, nickname):
         users.insert_one({
             "uid": int(uid),
             "nickname": str(nickname),
+            "studied": [],
             "date_reg": str(datereg)
         })
 
 async def find_user(uid):
     user = users.find_one({"uid": int(uid)})
     if(user == None):
-        return console.log("User is not exist")
+        return print("User is not exist")
     else:
         return users["uid"]
          
